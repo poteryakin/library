@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+:root {
+    --bg: #1a1f25;
+    --bg_button: #e6b333;
+    --color_border: #22272d;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--bg);
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#form {
+    display: none;
+    flex-direction: column;
+    gap: 3px;
+    width: 15%;
+}
+
+
+.form-input {
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid var(--color_border);
+    background-color: var(--bg);
+    color: var(--bg_button);
+    text-align: center;
+}
+
+.form-label {
+    font-family: "Roboto";
+    color: var(--bg_button);
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border: 2px solid var(--bg_button);
+    outline: none;
+}
+
+#btn_add {
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bg_button);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+#btn_newbook {
+    margin-top: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bg_button);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+.form_btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btn_view {
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bg_button);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+}
+
+#library {
+    color: var(--bg_button);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn_book_delete {
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bg_button);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+}
+
+.btn_read_delete {
+    width: 50%;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bg_button);
+    border: none;
+    cursor: pointer;
+    height: 25px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

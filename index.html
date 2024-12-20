@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <main id="main">
+        <button id="btn_newbook">New Book</button>
+        <form id="form">
+            <label class="form-label" for="title">Title:</label>
+            <input type="text" class="form-input" name="input_title" id="title" required>
+            <label class="form-label" for="author">Author:</label>
+            <input type="text" class="form-input" name="input_author" id="author">
+            <label class="form-label" for="pages">Pages:</label>
+            <input type="text" class="form-input" name="input_pages" id="pages">
+            <label class="form-label" for="read">Read or not read:</label>
+            <!-- <input type="text" class="form-input" name="input_read" id="read"> -->
+             <select id="read" class="form-input">
+                <option value="read">Read</option>
+                <option value="not read">Not read</option>
+             </select>
+            <div class="form_btn">
+                <button id="btn_add" type="submit">Add</button>
+            </div>
+            <div class="form_btn">
+                <button id="btn_view" type="submit">View Books</button>
+            </div>
+        </form>
+        <div id="library"></div>
+    </main>
+    <script src="./library.js"></script>
+</body>
+</html>
