@@ -91,7 +91,7 @@ function read() {
 function remove() {
     const bookDiv = this.parentElement;
     const bookIndex = bookDiv.getAttribute('data-index');
-    library.splice(bookIndex-1, 1);
+    library.splice(bookIndex, 1);
     viewBooks();
 }
 
